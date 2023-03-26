@@ -1,0 +1,260 @@
+html {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  line-height: 1;
+  font-family: "Rubik", sans-serif;
+  color: #4f5665;
+  font-weight: 400;
+  background-color: white;
+}
+
+button {
+  cursor: pointer;
+  outline: none;
+  border: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 1rem;
+  background-color: transparent;
+}
+
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1170px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+h1,
+h2,
+h3 {
+  color: #0b132a;
+  font-weight: 500;
+}
+
+a,
+p {
+  color: #4f5665;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.header {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+.header__menu a {
+  color: #4f5665;
+}
+.header__cta button {
+  text-transform: capitalize;
+  font-weight: 500;
+}
+.header__cta__signin {
+  padding: 13px 30px;
+}
+.header__cta__signup {
+  padding: 13px 45px;
+  color: #f53855;
+  border: 1px solid #f53855;
+  border-radius: 50px;
+}
+.header__cta__signup:hover {
+  background-color: #F53855;
+  color: white;
+}
+
+.hero {
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 120px;
+  gap: 4%;
+}
+.hero div {
+  flex-basis: 48%;
+}
+.hero-content h1 {
+  font-size: 50px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+.hero-content h1 strong {
+  font-weight: 700;
+}
+.hero-content p {
+  line-height: 1.875;
+  margin-bottom: 50px;
+}
+.hero-content p strong {
+  font-weight: 500;
+}
+.hero-content .button {
+  background-color: #f53838;
+  border-radius: 10px;
+  padding: 17.5px 77.5px;
+  font-weight: 700;
+  color: white;
+}
+.hero-content .button--shadow {
+  position: relative;
+  z-index: 10;
+}
+.hero-content .button--shadow::after {
+  z-index: -1;
+  border-radius: inherit;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 90%;
+  height: 100%;
+  transform: translate(-50%, 50%);
+  background-color: rgba(245, 56, 56, 0.35);
+  filter: blur(27px);
+}
+.hero-image {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translate(40px, -50%);
+}
+
+.statistic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 150px;
+}
+.statistic-item {
+  flex-basis: 33.33%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 36px;
+}
+.statistic-item-content {
+  display: flex;
+  flex-flow: column;
+}
+.statistic-item-content span {
+  font-size: 20px;
+  line-height: 1.5;
+}
+.statistic-item-content span:first-child {
+  font-size: 25px;
+  font-weight: 700;
+}
+.statistic hr {
+  border: 1px solid #eeeff2;
+  height: 62.5%;
+  border-radius: 5px;
+}
+.statistic::after {
+  position: absolute;
+  z-index: -1;
+  content: "";
+  width: 90%;
+  height: 100%;
+  top: 25%;
+  left: 5%;
+  background: #0d1025;
+  opacity: 0.06;
+  filter: blur(57px);
+  border-radius: 10px;
+}
+
+.features {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 0 170px;
+}
+.features-image {
+  margin-left: 34px;
+  flex: 1 0 auto;
+  max-width: 510px;
+}
+.features-image img {
+  width: 100%;
+}
+.features-content {
+  line-height: 1.875;
+}
+.features-content h1 {
+  font-size: 35px;
+  line-height: 1.4285714286;
+  margin-bottom: 20px;
+}
+.features-content p {
+  margin-bottom: 15px;
+}
+.features-content ul li {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  font-size: 14px;
+  line-height: 30px;
+}
+.features-content ul li:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/*# sourceMappingURL=app.css.map */

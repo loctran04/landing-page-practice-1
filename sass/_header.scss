@@ -1,0 +1,35 @@
+.header {
+  padding-top: 50px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  &__menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+    a {
+        color: $text-color;
+    }
+  }
+  &__cta {
+    button {
+      text-transform: capitalize;
+      font-weight: 500;
+    }
+    &__signin {
+        padding: 13px 30px;
+    }
+    &__signup {
+      padding: 13px 45px;
+      color: #f53855;
+      border: 1px solid #f53855;
+      border-radius: 50px;
+      &:hover {
+        background-color: #F53855;
+        color: white;
+      }
+    }
+  }
+}

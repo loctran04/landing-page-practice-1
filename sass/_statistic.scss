@@ -1,0 +1,47 @@
+.statistic {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 200px;
+  position: relative;
+  background-color: white;
+  border-radius: 10px;
+  margin-bottom: 150px;
+  &-item {
+    flex-basis: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 36px;
+    &-content {
+      display: flex;
+      flex-flow: column;
+      span {
+        &:first-child {
+          font-size: 25px;
+          font-weight: 700;
+        }
+        font-size: 20px;
+        line-height: 1.5;
+      }
+    }
+  }
+  hr {
+    border: 1px solid #eeeff2;
+    height: 62.5%;
+    border-radius: 5px;
+  }
+  &::after {
+    position: absolute;
+    z-index: -1;
+    content: "";
+    width: 90%;
+    height: 100%;
+    top: 25%;
+    left: 5%;
+    background: #0d1025;
+    opacity: 0.06;
+    filter: blur(57px);
+    border-radius: 10px;
+  }
+}
