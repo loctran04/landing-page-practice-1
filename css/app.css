@@ -226,6 +226,7 @@ ul {
   justify-content: space-between;
   align-items: flex-end;
   gap: 0 170px;
+  margin-bottom: 130px;
 }
 .features-image {
   margin-left: 34px;
@@ -255,6 +256,106 @@ ul {
 }
 .features-content ul li:not(:last-child) {
   margin-bottom: 15px;
+}
+
+.plan-selection {
+  margin: 80px auto 150px auto;
+}
+.plan-selection > h1 {
+  font-size: 35px;
+  line-height: 50px;
+  text-align: center;
+}
+.plan-selection__description {
+  max-width: 550px;
+  text-align: center;
+  margin: 20px auto 60px auto;
+  line-height: 30px;
+  color: #4f5665;
+}
+.plan-selection__options {
+  max-width: 1090px;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  gap: 4.58%;
+}
+.plan-selection__options__item {
+  flex-basis: 30.5%;
+  padding: 79px 69px 50px 69px;
+  display: flex;
+  flex-flow: column nowrap;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  transition: ease 0.5s all;
+}
+.plan-selection__options__item:hover {
+  transform: scale(1.1);
+  border: 2px solid #f53855;
+}
+.plan-selection__options__item > h3 {
+  margin: 30px 0;
+  text-align: center;
+}
+.plan-selection__options__item > ul {
+  width: 190px;
+  margin-bottom: 90px;
+  flex-grow: 1;
+}
+.plan-selection__options__item > ul li {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 10px 19px;
+  align-items: center;
+}
+.plan-selection__options__item > ul li img {
+  width: 24px;
+  height: 24px;
+}
+.plan-selection__options__item > ul li > span {
+  font-size: 14px;
+  line-height: 30px;
+  flex-grow: 1;
+}
+.plan-selection__options__item > ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+.plan-selection__options__item__price {
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plan-selection__options__item__price > span {
+  font-weight: 400;
+  color: #4f5665;
+}
+.plan-selection__options__item__btn {
+  padding: 13px 63px;
+  color: #f53855;
+  border: 2px solid #f53855;
+  border-radius: 50px;
+  font-weight: 700;
+  line-height: 1rem;
+}
+.plan-selection__options__item__btn:hover {
+  background-color: #F53855;
+  color: white;
+  position: relative;
+  z-index: 10;
+}
+.plan-selection__options__item__btn:hover::after {
+  z-index: -1;
+  border-radius: inherit;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 50%;
+  width: 90%;
+  height: 100%;
+  transform: translate(-50%, 50%);
+  background-color: rgba(245, 56, 56, 0.35);
+  filter: blur(27px);
 }
 
 /*# sourceMappingURL=app.css.map */
